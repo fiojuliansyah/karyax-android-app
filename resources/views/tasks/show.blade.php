@@ -15,7 +15,7 @@
             <div>
                 <span class="color-highlight font-300 d-block text-uppercase font-10 pt-3">{{ $task->date }}</span>
                 <strong class="color-theme font-20 d-block mt-n2 mb-n2">{{ $task->name }}</strong>
-                <span class="font-11 color-theme opacity-30 d-block pb-2 pt-2"><i class="fa fa-map-marker pe-2"></i>{{ $task->floor }}</span>
+                <span class="font-11 color-theme opacity-30 d-block pb-2 pt-2"><i class="fa fa-map-marker pe-2"></i>{{ $task->floor->name }}</span>
                 <div class="clearfix"></div>
             </div>
             <div class="divider mt-3 mb-2"></div>

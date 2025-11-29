@@ -87,6 +87,7 @@ class ScheduleController extends Controller
         $taskProgress = new TaskProgress;
         $taskProgress->task_planner_id = $request->task_planner_id;
         $taskProgress->user_id = $user->id;
+        $taskProgress->site_id = $user->site->id;
         $taskProgress->status = 'in_progress';
         $taskProgress->date = $currentDate;
         $taskProgress->start_time = $timeNow;

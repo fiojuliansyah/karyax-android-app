@@ -378,4 +378,4 @@
     </style>
 @endpush
 
-@include('mobiles.attendances.partials.face-detection')
+@include('attendances.partials.face-detection')

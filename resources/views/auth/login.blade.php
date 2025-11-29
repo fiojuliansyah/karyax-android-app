@@ -38,7 +38,7 @@
 
         <!-- Privacy Policy Link -->
         <div class="mt-2">
-            <a href="{{ route('privacy-policy') }}" class="font-12 color-blue-dark">Privacy Policy / Kebijakan Privasi</a>
+            <a href="{{ route('privacy-policy') }}" target="_blank" class="font-12 color-blue-dark">Privacy Policy</a>
         </div>
     </div>
 
