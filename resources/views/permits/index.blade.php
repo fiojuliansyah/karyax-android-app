@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Ijjin')
+@section('title', 'Pengajuan Ijin')
 @section('content')
 <div class="page-content pt-5">
     <div class="content mt-0 mb-0">
