@@ -64,12 +64,12 @@ class MinuteController extends Controller
                 $lastAttendance->remark = $request->remark;
                 $lastAttendance->save();
             } else {
-                return redirect()->route('minute.index')
+                return redirect()->back()
                                  ->with('error', 'No clock-in record found. Please clock in first.');
             }
         }
 
-        return redirect()->route('minute.index')
+        return redirect()->back()
                          ->with('success', 'Minute recorded successfully.');
     }
 

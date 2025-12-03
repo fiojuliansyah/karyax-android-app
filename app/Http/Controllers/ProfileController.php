@@ -136,7 +136,7 @@ class ProfileController extends Controller
             $user->profile()->create($data);
         }
 
-        return redirect()->route('setting')
+        return redirect()->back()
             ->with('success', 'Profil ' . $user->name . ' berhasil diperbarui');
     }
 
@@ -163,7 +163,7 @@ class ProfileController extends Controller
             $user->profile()->create($data);
         }
 
-        return redirect()->route('setting')
+        return redirect()->back()
             ->with('success', 'Bank ' . $user->name . ' berhasil diperbarui');
     }
 
@@ -209,7 +209,7 @@ class ProfileController extends Controller
             }
         }
 
-        return redirect()->route('setting')
+        return redirect()->back()
             ->with('success', 'Tanda Tangan ' . $user->name . ' berhasil diperbarui');
     }
 }

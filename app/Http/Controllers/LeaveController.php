@@ -71,7 +71,7 @@ class LeaveController extends Controller
             'attendance_id' => $attendance->id,
         ]);
 
-        return redirect()->route('leave.index')->with('success', 'Pengajuan permohonan cuti berhasil diajukan');
+        return redirect()->back()->with('success', 'Pengajuan permohonan cuti berhasil diajukan');
     }
 
     public function update(Request $request, $id)
@@ -104,7 +104,7 @@ class LeaveController extends Controller
             $leave->save();
         }
 
-        return redirect()->route('home')->with('success', 'Leave successfully updated.');
+        return redirect()->back()->with('success', 'Leave successfully updated.');
     }
 
     public function show($id)

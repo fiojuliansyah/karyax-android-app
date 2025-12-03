@@ -67,7 +67,7 @@ class PermitController extends Controller
             'attendance_id' => $attendance->id,
         ]);
 
-        return redirect()->route('permit.index')
+        return redirect()->back()
             ->with('success', 'Pengajuan permohonan cuti berhasil diajukan');
     }
 
@@ -102,7 +102,7 @@ class PermitController extends Controller
 
         $permit->save();
 
-        return redirect()->route('home')
+        return redirect()->back()
             ->with('success', 'Permit successfully updated.');
     }
 

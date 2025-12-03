@@ -68,7 +68,7 @@ class FindingsReportController extends Controller
             'image_url' => $imgUrl,
         ]);
 
-        return redirect()->route('findings-reports.index')
+        return redirect()->back()
                          ->with('success', 'Report created successfully.');
     }
 
@@ -128,7 +128,7 @@ class FindingsReportController extends Controller
 
         $findingsReport->update($data);
 
-        return redirect()->route('findings-reports.index')
+        return redirect()->back()
                          ->with('success', 'Report updated successfully.');
     }
 
@@ -141,7 +141,7 @@ class FindingsReportController extends Controller
 
         $findingsReport->delete();
 
-        return redirect()->route('findings-reports.index')
+        return redirect()->back()
                          ->with('success', 'Report deleted successfully.');
     }
 }
