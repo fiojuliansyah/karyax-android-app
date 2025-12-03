@@ -1,10 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Ijjin')
 @section('content')
-<div class="header header-fixed header-logo-center">
-    <a href="index.html" class="header-title">Izin</a>
-    <a href="{{ route('home') }}" class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
-</div>
 <div class="page-content pt-5">
     <div class="content mt-0 mb-0">
         <div class="list-group list-custom-large">
