@@ -34,14 +34,9 @@
     @if (session('success') || session('status'))
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                // Tunggu handler Flutter siap
-                setTimeout(function() {
-                    if (window.notifyDataSaved) {
-                        window.notifyDataSaved();
-                    } else if (window.flutter_inappwebview) {
-                        window.flutter_inappwebview.callHandler('dataSaved');
-                    }
-                }, 1000);
+                if (window.notifyDataSaved) {
+                    window.notifyDataSaved();
+                }
             });
         </script>
     @endif
