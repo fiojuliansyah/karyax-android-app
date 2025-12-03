@@ -1,14 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Detail User')
 @section('content')
-
-<div class="header header-fixed header-logo-center">
-    <a href="#" onclick="history.back()" class="header-icon header-icon-1">
-        <i class="fas fa-arrow-left"></i>
-    </a>
-    <span class="header-title">Detail User</span>
-</div>
-
 <div class="page-content p-3 pt-5">
 
     <div class="p-4 text-center">

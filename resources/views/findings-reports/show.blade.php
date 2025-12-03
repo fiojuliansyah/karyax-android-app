@@ -1,10 +1,7 @@
 @extends('layouts.app')
 
+@section('title','Form Temuan')
 @section('content')
-<div class="header header-fixed header-logo-center">
-    <span class="header-title">Form Findings Report</span>
-    <a href="{{ route('findings-reports.index') }}" class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
-</div>
 
 <div class="page-content pt-5">
     @if(isset($findingsReport) && $findingsReport)

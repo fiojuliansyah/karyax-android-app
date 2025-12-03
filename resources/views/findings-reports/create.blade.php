@@ -1,10 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Buat Temuan')
 @section('content')
-<div class="header header-fixed header-logo-center">
-    <a href="{{ route('findings-reports.index') }}" class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
-    <span class="header-title">Buat Findings Report</span>
-</div>
 
 <div class="page-content header-clear-medium">
     <form id="formStore" method="POST" action="{{ route('findings-reports.store') }}" enctype="multipart/form-data">

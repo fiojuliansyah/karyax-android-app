@@ -18,7 +18,7 @@
                 <p class="color-highlight font-11 mt-n2 mb-3">{{ Auth::user()->email }}</p>
             </div>
             <div style="margin-left: 10px; padding-top: 5px;">
-                <a href="{{ route('account') }}">
+                <a href="{{ route('account') }}" target="_blank">
                     <i class="fas fa-pencil-alt color-dark-dark"></i>
                 </a>
             </div>
@@ -30,13 +30,13 @@
     </div>
     <div class="content mt-0 mb-0">
         <div class="list-group list-custom-large me-2">
-            <a href="{{ route('profile') }}">
+            <a href="{{ route('profile') }}" target="_blank">
                 <i class="fas fa-address-card font-20 color-dark-dark"></i>
                 <span>Profil</span>
                 <strong>Profile</strong>
                 <i class="fa fa-angle-right color-dark-dark"></i>
             </a>
-            <a href="{{ route('bank') }}">
+            <a href="{{ route('bank') }}" target="_blank">
                 <i class="fa fa-bank font-20 color-dark-dark"></i>
                 <span>Informasi BANK</span>
                 <strong>BANK Information</strong>

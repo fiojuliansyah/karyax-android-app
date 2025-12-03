@@ -1,15 +1,11 @@
 @extends('layouts.app')
 
+@section('title','Lembur')
 @section('content')
 <div class="page-content mb-0 pb-0">
-    <!-- Header buttons -->
+
     <div class="header-buttons" style="position: absolute; top: 20px; left: 0; right: 0; z-index: 1000; padding: 0 20px; display: flex; justify-content: space-between;">
-        <!-- Back button -->
-        <a href="{{ route('home') }}" class="btn btn-sm rounded-s bg-white color-black">
-            <i class="fas fa-arrow-left"></i>
-        </a>
-        
-        <!-- Refresh location button -->
+
         <a href="#" id="refreshMapBtn" class="btn btn-sm rounded-s bg-white color-black">
             <i class="fas fa-sync-alt"></i>
         </a>

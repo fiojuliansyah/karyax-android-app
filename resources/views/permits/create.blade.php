@@ -1,10 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Buat Ijin')
 @section('content')
-    <div class="header header-fixed header-logo-center">
-        <a href="index.html" class="header-title">Buat Izin</a>
-        <a href="{{ route('home') }}" class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
-    </div>
     <div class="page-content header-clear-medium">
 
         <form id="formStore" method="POST" action="{{ route('permit.store') }}" enctype="multipart/form-data">

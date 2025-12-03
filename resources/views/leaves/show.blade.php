@@ -1,11 +1,7 @@
 @extends('layouts.app')
 
+@section('title','Form Pengajuan Cuti')
 @section('content')
-<div class="header header-fixed header-logo-center">
-    <span class="header-title">Form Pengajuan Cuti</span>
-    <a href="{{ route('home') }}" class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
-</div>
-
 <div class="page-content pt-5">
     @if(isset($leave) && $leave)
         <div class="list-group list-custom-large">

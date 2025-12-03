@@ -1,13 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Site Patroll')
 @section('content')
-<div class="header header-fixed header-logo-center">
-    <a href="#" class="header-title">Site Patroll</a>
-    <a href="{{ route('home') }}" class="header-icon header-icon-1">
-        <i class="fas fa-arrow-left"></i>
-    </a>
-</div>
-
 <div class="page-content pt-5">
 
     <div class="content mt-0 mb-0">

@@ -1,13 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Pegawai')
 @section('content')
-    <div class="header header-fixed header-logo-center">
-        <a href="index.html" class="header-title">Teams</a>
-        <a href="{{ route('home') }}" class="header-icon header-icon-1">
-            <i class="fas fa-arrow-left"></i>
-        </a>
-    </div>
-
     <div class="page-content pt-5 px-3">
         <form method="GET" class="mb-4 pt-5">
             <div class="row">

@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+@section('title','Form Berita Acara')
 @section('content')
 <div class="page-content">
     <div class="card card-style" style="margin-top: 50px">

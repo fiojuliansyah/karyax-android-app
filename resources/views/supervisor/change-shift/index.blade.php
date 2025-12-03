@@ -1,13 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Ubah Shift')
 @section('content')
-<div class="header header-fixed header-logo-center">
-    <a href="#" class="header-title">Change Shift</a>
-    <a href="{{ route('home') }}" class="header-icon header-icon-1">
-        <i class="fas fa-arrow-left"></i>
-    </a>
-</div>
-
 <div class="page-content pt-4 mt-4">
 
     <div class="mx-3 mt-3">

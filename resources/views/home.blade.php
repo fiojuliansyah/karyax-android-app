@@ -166,23 +166,23 @@
             </div>
             <div class="row text-center px-2">
                 <div class="col-3">
-                    <a href="{{ route('attendance.logs') }}"
+                    <a href="{{ route('attendance.logs') }}" target="_blank"
                         class="icon icon-xxl bg-theme color-highlight shadow-l rounded-m"><i class="fas fa-history"></i></a>
                     <span class="font-10 font-500 color-theme d-block">Riwayat</span>
                 </div>
                 <div class="col-3">
-                    <a href="{{ route('overtime.index') }}"
+                    <a href="{{ route('overtime.index') }}" target="_blank"
                         class="icon icon-xxl bg-theme color-highlight shadow-l rounded-m"><i
                             class="fas fa-user-clock"></i></a>
                     <span class="font-10 font-500 color-theme d-block">Lembur</span>
                 </div>
                 <div class="col-3">
-                    <a href="{{ route('payslip') }}" class="icon icon-xxl bg-theme color-highlight shadow-l rounded-m"><i
+                    <a href="{{ route('payslip') }}" target="_blank" class="icon icon-xxl bg-theme color-highlight shadow-l rounded-m"><i
                             class="fas fa-receipt"></i></a>
                     <span class="font-10 font-500 color-theme d-block">Payslip</span>
                 </div>
                 <div class="col-3">
-                    <a href="{{ route('permit.index') }}"
+                    <a href="{{ route('permit.index') }}" target="_blank"
                         class="icon icon-xxl bg-theme color-highlight shadow-l rounded-m"><i
                             class="fas fa-marker"></i></a>
                     <span class="font-10 font-500 color-theme d-block">Izin</span>
@@ -191,19 +191,19 @@
 
             <div class="row text-center px-2 pt-2">
                 <div class="col-3">
-                    <a href="{{ route('permit.index') }}"
+                    <a href="{{ route('permit.index') }}" target="_blank"
                         class="icon icon-xxl bg-theme color-highlight shadow-l rounded-m"><i
                             class="fas fa-marker"></i></a>
                     <span class="font-10 font-500 color-theme d-block">Izin</span>
                 </div>
                 <div class="col-3">
-                    <a href="{{ route('minute.index') }}"
+                    <a href="{{ route('minute.index') }}" target="_blank"
                         class="icon icon-xxl bg-theme color-highlight shadow-l rounded-m"><i
                             class="fas fa-file-alt"></i></a>
                     <span class="font-10 font-500 color-theme d-block">Berita Acara</span>
                 </div>
                 <div class="col-3">
-                    <a href="{{ route('leave.index') }}"
+                    <a href="{{ route('leave.index') }}" target="_blank"
                         class="icon icon-xxl bg-theme color-highlight shadow-l rounded-m"><i
                             class="fas fa-suitcase-rolling"></i></a>
                     <span class="font-10 font-500 color-theme d-block">Cuti</span>
@@ -228,7 +228,7 @@
                     </span>
                     <div class="mt-3">
                         <div class="list-group list-group-flush">
-                            <a href="{{ route('supervisor.teams.index') }}"
+                            <a href="{{ route('supervisor.teams.index') }}" target="_blank"
                                 class="list-group-item px-1 d-flex align-items-center p-3">
                                 <div class="rounded-3 bg-blue-dark-supervisor size-icon-supervisor shadow-sm">
                                     <i class="fa fa-users"></i>
@@ -244,7 +244,7 @@
                                 </div>
                             </a>
         
-                            <a href="#"
+                            <a href="#" target="_blank"
                                 class="list-group-item px-1 d-flex align-items-center p-3">
                                 <div class="rounded-3 bg-blue-dark-supervisor size-icon-supervisor shadow-sm">
                                     <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -261,7 +261,7 @@
                                 </div>
                             </a>
         
-                            <a href="#"
+                            <a href="#" target="_blank"
                                 class="list-group-item px-1 d-flex align-items-center p-3">
                                 <div class="rounded-3 bg-blue-dark-supervisor size-icon-supervisor shadow-sm">
                                     <i class="fa fa-clock" aria-hidden="true"></i>
@@ -277,7 +277,7 @@
                                 </div>
                             </a>
 
-                            <a href="{{ route('supervisor.change-shift.index') }}"
+                            <a href="{{ route('supervisor.change-shift.index') }}" target="_blank"
                                 class="list-group-item px-1 d-flex align-items-center p-3">
                                 <div class="rounded-3 bg-blue-dark-supervisor size-icon-supervisor shadow-sm">
                                     <i class="fa fa-exchange" aria-hidden="true"></i>
@@ -294,7 +294,7 @@
                                 </div>
                             </a>
         
-                            <a href="{{ route('supervisor.site-patroll.index') }}"
+                            <a href="{{ route('supervisor.site-patroll.index') }}" target="_blank"
                                 class="list-group-item px-1 d-flex align-items-center p-3">
                                 <div class="rounded-3 bg-blue-dark-supervisor size-icon-supervisor shadow-sm">
                                     <i class="fa fa-line-chart" aria-hidden="true"></i>

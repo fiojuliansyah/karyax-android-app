@@ -1,12 +1,8 @@
 @extends('layouts.app')
 
-@section('content')
-<div class="header header-fixed header-logo-center">
-    <a href="{{ route('home') }}" class="header-title">Riwayat Absensi</a>
-    <a href="{{ route('home') }}" class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
-    <a href="#" class="header-icon header-icon-4" onclick="showFilterModal()"><i class="fas fa-filter"></i></a>
-</div>
+@section('title','Riwayat Absensi')
 
+@section('content')
 <div class="page-content pt-5">
     <!-- Date Filter Info -->
     @if(request('start_date') || request('end_date'))
