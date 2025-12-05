@@ -53,27 +53,11 @@
                         </div>
                     </div>
 
-                    <!-- Deskripsi -->
                     <div class="mt-3 mb-3">
                         <h6>Deskripsi</h6>
                         <p>{{ $permit->reason }}</p>
                     </div>
 
-                    <!-- Approval -->
-                    <div class="row mb-2">
-                        <div class="col-6">
-                            <p class="color-theme font-15 font-800">Menyetujui</p>
-                            <p class="line-height-s">{{ $permit->user->leader['name'] ?? '-' }}</p>
-                        </div>
-                        <div class="col-6 text-end">
-                            @if($permit->user->leader->leader)
-                                <p class="color-theme font-15 font-800">Menyetujui</p>
-                                <p class="line-height-s">{{ $permit->user->leader->leader['name'] ?? '-' }}</p>
-                            @endif
-                        </div>
-                    </div>
-
-                    <!-- Image -->
                     @if($permit->image_url)
                         <div class="mt-3 text-center">
                             <img src="{{ $permit->image_url }}" alt="Bukti Izin" class="img-fluid rounded-m">
@@ -87,9 +71,6 @@
             <div class="content">
                 <h3>Data Izin Tidak Ditemukan</h3>
                 <p>Belum ada data izin terbaru untuk ditampilkan</p>
-                <a href="{{ route('home') }}" class="btn btn-full btn-m bg-highlight rounded-s mt-3">
-                    <i class="fas fa-arrow-left me-2"></i>Back to Home
-                </a>
             </div>
         </div>
     @endif
