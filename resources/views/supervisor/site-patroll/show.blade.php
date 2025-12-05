@@ -1,19 +1,12 @@
 @extends('layouts.app')
 
+@section('title', '{{ $site->name ?? '' }}')
 @section('content')
 
-<div class="header header-fixed header-logo-center">
-    <span class="header-title">{{ $site->name }}</span>
-    <a href="{{ route('home') }}" class="header-icon header-icon-1">
-        <i class="fas fa-arrow-left"></i>
-    </a>
+<div class="page-content pt-5">
     <a href="#" data-bs-toggle="modal" data-bs-target="#modalTanggal" class="header-icon header-icon-4">
         <i class="fas fa-calendar-alt"></i>
     </a>
-</div>
-
-<div class="page-content pt-5">
-
     <div class="mb-4">
         <div class="content">
             <form method="GET" action="{{ route('supervisor.site-patroll.show', $site->id) }}">
