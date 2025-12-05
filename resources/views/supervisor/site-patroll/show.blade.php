@@ -7,9 +7,14 @@
 @section('content')
 
 <div class="page-content pt-5">
-    <a href="#" data-bs-toggle="modal" data-bs-target="#modalTanggal" class="header-icon header-icon-4">
-        <i class="fas fa-calendar-alt"></i>
-    </a>
+    <div class="d-flex justify-content-end px-3 mb-2">
+        <button class="btn btn-light shadow-sm rounded-circle"
+                data-bs-toggle="modal"
+                data-bs-target="#modalTanggal"
+                style="width: 40px; height: 40px;">
+            <i class="fas fa-calendar-alt mt-1"></i>
+        </button>
+    </div>
     <div class="mb-4">
         <div class="content">
             <form method="GET" action="{{ route('supervisor.site-patroll.show', $site->id) }}">
