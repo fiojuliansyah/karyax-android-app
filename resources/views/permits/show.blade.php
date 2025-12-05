@@ -6,7 +6,7 @@
 <div class="page-content pt-5">
     @if(isset($permit) && $permit)
         <div class="list-group list-custom-large">
-            <div class="card card-style mb-3">
+            <div class="mb-3">
                 <div class="content">
                     <!-- Logo -->
                     <div class="text-center mb-3">
