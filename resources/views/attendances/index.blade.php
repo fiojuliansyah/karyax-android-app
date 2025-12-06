@@ -101,18 +101,20 @@
             L.marker([userLat, userLong], { icon: customIcon }).addTo(map)
                 .bindPopup("<b>Lokasi Anda</b>").openPopup();
             
+            // Tampilkan lingkaran radius terlebih dahulu
+            L.circle([siteLat, siteLong], {
+                color: 'red',
+                fillColor: 'red',
+                fillOpacity: 0.2,
+                radius: radius
+            }).addTo(map);
+            
             if (userDepartment == 2) {
                 clockButton.style.display = 'block';
             } else {
                 var distance = map.distance([userLat, userLong], [siteLat, siteLong]);
                 if (distance <= radius) {
                     clockButton.style.display = 'block';
-                    L.circle([siteLat, siteLong], {
-                        color: 'red',
-                        fillColor: 'red',
-                        fillOpacity: 0.2,
-                        radius: radius
-                    }).addTo(map);
                 } else {
                     clockButton.style.display = 'none';
                 }
